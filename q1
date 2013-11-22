@@ -1,1 +1,11 @@
-Explain what git clone does in your own words:
+Explain what git clone does in your own words.
+
+Git clone is an instruction to make a copy of either a local repository, or a repository on github so you can work on the code. 
+
+If you are cloning local repositorys you must move to the parent directory of that repository and use the following structure:
+
+git clone <repo you are cloning> <name of new repo>
+
+If you are cloning from github you move to the directory where you would like to clone the repo and use the following structure 
+
+git clone <SSH key provided on github> 
