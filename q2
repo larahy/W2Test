@@ -1,9 +1,17 @@
 Explain what the upstream remote is usually used for, in your own words.
 
-An upstream remote is used for pushing changes to another repo.  You can set up an upstream remote to other local repositories, or to repositories on github - your own, or otherwise.
+An upstream remote is used for contributing to other people's projects. First you must fork their directory in github. 
+Then, make a clone of this as a local repo. 
+Then set up an additional remote to the origin so that you can keep up to date with any changes to the initial repository.
 
-Remotes are added by writing:
+Upstream remote is added by writing:
 
-git remote add origin <ssh key> -- if the repo is in github and you have write access.
+git remote add upstream <ssh key of original repository>
 
-git remote add shared <reponame> -- if the repo is local and you have write access.
+Changes can be fetched by writing:
+
+git fetch upstream
+
+Changes can be merged by writing:
+
+git merge upstream/<branchname>
