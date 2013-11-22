@@ -1,1 +1,5 @@
-Explain what a branch is, in your own words
+Explain what a branch is, in your own words.
+
+When a branch is created it holds a copy of everything on the master at that point.  You can then work on the file, or files, commiting as you go along, without affecting the original files stored on the Master branch.  When/if you have decide that the work you have been conducting on a branch is worthwhile you can 'merge' these changes to the master branch so that the files on the master will also be affected to fall in line with the content on the sub branch.  
+
+You can move between branches, making amends and not merging.  All commits on any branch will be stored in the git history until the branch is deleted.
